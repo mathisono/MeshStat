@@ -23,8 +23,19 @@ Installation and Set Up
 
 * Copy the executable anywhere you want
     * Linux executable:  MeshStat
-        - You may need to install the gtk3 package
-        - You may get some GTK warnings which you can safely ignore
+    
+        - You may need to install the gtk3 package, when the program is running you may get some GTK warnings which you can safely ignore.
+	
+	sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+        
+	- libpng12 is no longer available in the Ubuntu repository starting with 16.10. so it needs to be installed.
+	64bit repository https://packages.ubuntu.com/xenial/amd64/libpng12-0/download
+	32bit repository https://packages.ubuntu.com/xenial/i386/libpng12-0/download
+	
+	add the corect repository to your /etc/apt/sources.list
+	sudo apt-get update
+	sudo apt-get install libpng12-0
+	
     * Windows executable:  MeshStat.exe
 
 - You can get help from the program by running it on the command
